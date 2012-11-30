@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>keinprogramm.at &middot; Piratenpartei Österreichs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="keinprogramm.at - Das Parteiprogramm der Piratenpartei Österreichs">
+    <meta name="author" content="Piratenpartei Österreichs">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: relative;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .carousel-control {
+      background-color: transparent;
+      border: 0;
+      font-size: 120px;
+      margin-top: 0;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+
+    .carousel .item {
+      height: 400px;
+      background-color:#4c2582;
+    }
+    .carousel img {
+      min-width: 100%;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 600px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 400px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-bottom: 40px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Piratenpartei Österreichs</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="https://wiki.piratenpartei.at/wiki/Grundsatzprogramm">Grundsatzprogramm</a></li>
+              <li><a href="https://wiki.piratenpartei.at/wiki/Parteiprogramm">Parteiprogramm</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Landesprogramme<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://wiki.piratenpartei.at/wiki/Landesorganisation_Wien/Programm">Wien</a></li>
+                  <li><a href="https://wiki.piratenpartei.at/wiki/Nieder%C3%B6sterreich/Programm">Niederösterreich</a></li>
+                  <li><a href="https://wiki.piratenpartei.at/wiki/Landesorganisation_Steiermark/Programm">Steiermark</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Regionalprogramme<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://wiki.piratenpartei.at/wiki/Ortsgruppen:Steiermark/Graz/Programm">Graz</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/Banner_Sonne_web.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Kein Programm? Stimmt nicht!</h1>
+              <p class="lead">Das Programm der Piratenpartei Österreichs wächst täglich.</p>
+              <a class="btn btn-large btn-primary" href="#inhalte">Unsere Inhalte &raquo;</a>
+            </div>
+          </div>
+        </div>
+<!-- Carousel nicht aktivieren! Hintergrundfarbe ist verstellt wegen Skalierung auf Mobile Devices.
+	Bildung.jpg - Lizenzhinweis CC BY SA CollegeDegrees360 - http://www.flickr.com/photos/83633410@N07/
+        <div class="item">
+          <img src="img/bildung.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bildung</h1>
+              <p class="lead">Lerne das Bildungsprogramm der Piratenpartei kennen.</p>
+              <a class="btn btn-large btn-primary" href="https://wiki.piratenpartei.at/wiki/Parteiprogramm#Bildung">Bildungsprogramm</a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+<!--      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src="img/graz.jpg">
+          <h2>Graz-Wahl</h2>
+          <p>Danke für eure Stimmen!</p>
+          <p><a class="btn" href="https://wiki.piratenpartei.at/wiki/Ortsgruppen:Steiermark/Graz/Programm">Grazer Piratenprogramm &raquo;</a></p>
+          <p><a class="btn" href="http://initiative.piratenpartei.at/oepnv.php">ÖPNV-Rechner &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="img/programm.jpg">
+          <h2>Parteiprogramm</h2>
+          <p>Das Programm der Piratenpartei Österreichs in seiner detailliertesten Form. Täglich frisch!</p>
+          <p><a class="btn" href="https://wiki.piratenpartei.at/wiki/Parteiprogramm">Parteiprogramm &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="img/grundsaetze.jpg">
+          <h2>Grundsatzprogramm</h2>
+          <p>Die Wurzeln, Grundsätze und Visionen der Piraten zusammengefasst in unserem Grundsatzprogramm.</p>
+          <p><a class="btn" href="https://wiki.piratenpartei.at/wiki/Grundsatzprogramm">Grundsatzprogramm &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+			<hr id="inhalte" class="featurette-divider">
+
+			<h2 class="featurette-heading">Mitbestimmen auch nach der Wahl.<br><span class="muted">Direkte Demokratie jetzt!</span></h2>
+      <p class="lead">Wir&nbsp;leben heute in einer Demokratie, die nicht mehr zeitgemäß ist. Wir Bürger können derzeit alle fünf oder sechs Jahre einmal unsere Stimme abgeben und müssen dann hoffen, dass sie dann sinnvoll verwendet wird. Die Piraten sind der Meinung, dass wir die Demokratie und Bürgerbeteiligung in Österreich verbessern können. <a href="https://piratenpartei.at/programm-und-inhalte/buergerbeteiligung-und-demokratie/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+			<h2 class="featurette-heading">Gläserner Staat statt gläserne Bürger!</h2>
+      <p class="lead">Viele&nbsp;Menschen haben ihr Leben dafür gegeben, um die Rechte zu erkämpfen, die wir heute als selbstverständlich betrachten. Der Schutz persönlicher Daten und die Privatsphäre gehören dazu. Die Freiheit des Einzelnen ist ein in Verfassung und Menschenrechtskonvention verankertes Grundrecht. In den letzten Jahren ist dennoch eine Tendenz zu beobachten, im Namen der Sicherheit die Freiheitsrechte einzuschränken. Dem tatsächlichen Verlust an Freiheit steht allerdings nur ein vermeintlicher Gewinn an Sicherheit gegenüber. <a href="https://piratenpartei.at/programm-und-inhalte/datenschutz-privatsphare-netzpolitik/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+      <h2 class="featurette-heading pull-left">Dieser Slogan ist in deinem Land nicht verfügbar!</h2>
+      <p class="lead">Das&nbsp;Urheberrecht entstand ursprünglich, um die Erstellung, Entwicklung und Verbreitung von kulturellen Ausdrucksformen zum Wohle der Gesellschaft anzuregen. Um diese Ziele zu erreichen, benötigen wir eine ausgewogene Balance zwischen den allgemeinen Anforderungen der Verfügbarkeit und Verbreitung auf der einen Seite und den Forderungen der Schaffenden nach Anerkennung und Vergütung auf der anderen Seite.</p>
+			<p class="lead">Eine ähnliche Thematik betrifft das Patentrecht. Patente sind offiziell gebilligte Monopole auf Ideen. Große Unternehmen patentieren fieberhaft soviel wie möglich, um die Zahl ihrer Patente stetig zu steigern. Diese Patente werden dann oft dazu verwendet, um Kleinunternehmer gar nicht erst in der Riege der großen Firmen mitspielen zu lassen. Die zunehmende Monopolisierung führt zu keinerlei Verbesserung des Kundennutzens, des Preises oder der Qualität – im Gegenteil wird das Patentrecht dazu verwendet, Preise auf ein Niveau zu heben, die ein tatsächlich freier Markt nie möglich machen würde, und Beschränkungen einzuführen, die dieser nie akzeptieren würde. <a href="https://piratenpartei.at/programm-und-inhalte/urheber-und-patentrecht/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+			<h2 class="featurette-heading">"Wer Freiheit aufgibt,<br>um Sicherheit zu erhalten,<br>verliert beides"<br><span class="muted">Benjamin Franklin</span></h2>
+      <p class="lead">Wir&nbsp;Piratinnen und Piraten stehen für die politische, gesellschaftliche, rechtliche und wirtschaftliche Freiheit jedes einzelnen Menschen, sein Leben so gestalten zu können, wie er es für richtig hält, solange die Freiheit der anderen geachtet wird. Neben der Freiheit von Zwängen, allem voran der freien Bestimmung über den eigenen Körper, gehört dazu auch die aktiv herzustellende Freiheit zur Selbstentfaltung und Teilhabe.</p>
+			<p class="lead">Viele Menschen sind derzeit von angemessener gesellschaftlicher Teilhabe ausgeschlossen. Wo sich einzelne Gruppierungen über die Interessen der Mehrheit der Menschen stellen, stehen wir dagegen. Den Menschen muss mehr Einfluss in der Politik gegeben werden. Wir leben Toleranz, aber wir kämpfen entschieden gegen alle, die Hass und Intoleranz verbreiten. Totalitären Tendenzen in Staat und Gesellschaft wirken wir entgegen. <a href="https://piratenpartei.at/programm-und-inhalte/freiheit-und-grundrechte/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+			<h2 class="featurette-heading">Keine Bildung ist zu teuer!</h2>
+			<p class="lead">Kommunikation,&nbsp;Information, Wissen und Bildung formen die Grundlage unse­rer Gesellschaft. Ihr Gesicht wird durch Bildung geprägt. Bildung ermöglicht den wissenschaftlichen, wirtschaftlichen und sozialen Fortschritt, auf dem un­ser materieller und geistiger Wohl­stand beruht. Sie setzt die Standards für un­ser Zusammenleben. Sie gibt Orientierung in einer komplexen Welt und schützt die Gesellschaft vor irrationalen Ängsten und leichtferti­gen Vorurteilen. Sie versetzt uns in die Lage, Herausforderungen zu meistern, Problemlö­sungen zu finden und, wenn nötig, die gesellschaftliche Richtung zu ändern. Wer die Bil­dung vernachlässigt, zerstört die Grundlage, auf der unsere Gesellschaft auf­gebaut ist.</p>
+			<p class="lead">Die großen Her­ausforderungen der Zukunft, wie zum Beispiel der Klimawandel, sind nur durch gesell­schaftliche, technische und wirtschaftliche Innovationen, also durch ein sehr viel hö­heres allgemeines Bildungsniveau, zu bewältigen. Dafür braucht es eine durchgängige Verbesse­rung der Bildung von der Kinderbetreuung bis zur Hochschule. Wir wollen das Niveau der Hochschul- und Berufsabschlüsse verbessern und die Anzahl der Absolventen deutlich steigern. <a href="https://piratenpartei.at/programm-und-inhalte/bildung-und-hochschulen/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+      <h2 class="featurette-heading">Auch Europa braucht ein Update!</h2>
+      <p class="lead">Die&nbsp;Piratenpartei Österreichs befürwortet den europäischen Einigungsprozess und ist sich seiner Bedeutung für Frieden, Freiheit, Wohlstand und Rechtsstaatlichkeit auf unserem Kontinent bewusst. Wir halten diese Errungenschaften weder für selbstverständlich noch für garantiert; sie bedürfen vielmehr einer ständigen aktiven Verteidigung und Ausgestaltung durch die Bürgerinnen und Bürger Europas. Vor diesem Hintergrund sehen wir die Krise des Euro, die Überschuldung der öffentlichen Haushalte und die Probleme der europäischen Institutionen, politische und wirtschaftliche Stabilität sowie soziale Sicherheit zu gewährleisten, mit großer Sorge, denn sie erschüttern das Fundament der europäischen Idee. <a href="https://piratenpartei.at/programm-und-inhalte/europapolitik/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+      <h2 class="featurette-heading">Cannabis ist kein Suchtgift.<br><span class="muted">Schluss mit der Prohibition!</span></h2>
+			<p class="lead">Die&nbsp;Piratenpartei Österreichs steht für eine repressionsfreie Drogenpolitik und will ein Ende der gescheiterten Prohibition. Wir lehnen die heutige, wissenschaftlich nicht begründete und großteils historisch gewachsene Unterscheidung in legale und illegale Stoffe ab und fordern die objektive und vorurteilsfreie Bewertung und Handhabung aller psychoaktiven Substanzen alleine anhand ihres Sucht- und Gefahrenpotenzials. Die derzeitige nicht faktenbasierte Bevormundung Erwachsener beim verantwortungsvollen Umgang mit Rausch- und Genussmitteln widerspricht der Grundüberzeugung der Piraten bezüglich Freiheit und Selbstbestimmung und unserem Verständnis einer mündigen Gesellschaft. Die bisherige Kriminalisierung der Konsumenten muss beendet und der damit verbundene Schwarzhandel durch kontrollierte Erwerbsstrukturen ersetzt werden. So ergeben sich dann Rahmenbedingungen, die – anders als heute – viele Probleme beseitigen, die alleine auf Grund mangelnder Kontrolle von gefährlichen Beimischungen und fehlender Hygiene entstehen.</p>
+			<p class="lead">Die Piraten sprechen sich ausdrücklich für weit reichende Gesetze und Verordnungen zum Schutz von Kindern und Jugendlichen aus. Jede und jeder soll sich der Verantwortung bewusst sein, junge Menschen umfassend und faktenbasiert über die Gefahren des Rauschmittelkonsums zu informieren. Ein wirksamer Jugendschutz kann nachweislich nicht nur durch bloße Reglementierung und Verbote erreicht werden. Ein offener und sachlicher Umgang mit dem Thema in Form umfangreicher Aufklärungsmaßnahmen in Schulen und Freizeiteinrichtungen muss gesetzliche Regelungen ergänzen. Ein bereits im Kindesalter im Rahmen allgemeiner Persönlichkeitsausbildung vermitteltes selbstbestimmtes Verhalten schafft die Voraussetzungen, um auch diesen Herausforderungen und Reizen gefestigt begegnen zu können. <a href="https://piratenpartei.at/programm-und-inhalte/gesundheit-und-drogenpolitik/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+			<h2 class="featurette-heading">Freie Fahrt für freie Bürger!</h2>
+      <p class="lead">Es&nbsp;ist Aufgabe des Staates, die Interessen zukünftiger Generationen schon heute zu vertreten. Wir planen über die nächste Legislaturperiode und die eigene Lebenszeit hinaus und versuchen, diese Denkweise generell in der Gesellschaft zu verankern. Jede Handlungsweise, die nicht beliebig wiederholt werden kann, ist nur eine Zwischenlösung, deren Folgen für Ressourcen und Umwelt abgeschätzt werden müssen. <a href="https://piratenpartei.at/programm-und-inhalte/umwelt-und-verkehr/">Unsere&nbsp;Forderungen.</a></p>
+
+      <hr class="featurette-divider">
+
+			<h2 class="featurette-heading">But wait, there's more!</h2>
+			<p class="lead">Diese Zusammenfassungen werden täglich um weitere Details und neue Inhalte erweitert. Entdecke jetzt unser gesamtes Parteiprogramm!</p>
+			<a class="btn btn-primary btn-large" href="https://wiki.piratenpartei.at/wiki/Parteiprogramm">Zum Parteiprogramm &raquo;</a>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Piratenpartei Österreichs, Lange Gasse 1/4, 1080 Wien</p>
+	<p>Für den Inhalt verantwortlich: bv@piratenpartei.at &middot; bgf@piratenpartei.at</p>
+	<p>Alle Inhalte sind unter Creative Commons lizensiert.</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
