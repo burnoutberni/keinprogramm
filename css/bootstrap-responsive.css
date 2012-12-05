@@ -91,6 +91,14 @@
   }
 }
 
+@media (min-width: 1500px) {
+	.carousel {
+		width:1240px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
